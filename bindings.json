@@ -1,0 +1,31 @@
+{
+    "cppFile": "src/Bindings.cpp",
+    "rust": {
+        "dir": "rust",
+        "interfaceModule": "interface",
+        "implementationModule": "implementation"
+    },
+    "objects": {
+        "Simple": {
+            "type": "Object",
+            "properties": {
+                "message": {
+                    "type": "QString",
+                    "write": true
+                },
+                "romList": {
+                    "type": "RomList"
+                }
+            }
+        },
+        "RomList": {
+            "type": "List",
+            "itemProperties": {
+                "name": {
+                    "type": "QString",
+                    "roles": [ [ "display" ] ]
+                }
+            }
+        }
+    }
+}
