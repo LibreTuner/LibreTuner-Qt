@@ -1,11 +1,12 @@
-
 [package]
 name = "rust"
-version = "1.0.0"
+version = "0.1.0"
+authors = ["Altenius <jacobjm18@gmail.com>"]
+edition = "2018"
+description = "Glue that provides a C interface for the Qt application"
 
 [dependencies]
-libc = "*"
+libretuner = {git = "https://github.com/LibreTuner/LibreTuner.git", version = "0.1.3"}
 
 [lib]
-name = "rust"
-crate-type = ["staticlib"]
+crate-type = ["cdylib"]
